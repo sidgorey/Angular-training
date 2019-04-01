@@ -1,0 +1,14 @@
+// Search API for Movie
+https://api.themoviedb.org/3/search/movie?api_key=da5bf3a049b411d443e6e0b82cc8acc2&language=en-US&page=1&include_adult=false&query=terminator
+
+// here add any string in query for search
+
+
+
+// Top Trending movies
+https://api.themoviedb.org/3/trending/movie/day?api_key=da5bf3a049b411d443e6e0b82cc8acc2
+
+// Top Rated Movies
+https://api.themoviedb.org/3/movie/top_rated?api_key=da5bf3a049b411d443e6e0b82cc8acc2&language=en-US&page=1
+
+

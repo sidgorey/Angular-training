@@ -1,15 +1,24 @@
 <form>
-  <h1>Sort by:</h1> 
-  <button mat-stroked-button>Popularity low to high</button>
-  <button mat-stroked-button>Populity high to low</button>
-  <button mat-stroked-button>Most recent first</button>
-  <button mat-stroked-button>Oldies first</button>
-  <mat-radio-group aria-label="Genre" >
-    <mat-radio-button value="1">All</mat-radio-button>
-    <mat-radio-button value="2">Drama</mat-radio-button>
-    <mat-radio-button value="3">Comedy</mat-radio-button>
-    <mat-radio-button value="4">Action</mat-radio-button>
-    <mat-radio-button value="5">Adventure</mat-radio-button>
-  </mat-radio-group>
-  <button>Sort</button>
+  <button mat-button (click)="expandCollapse()">
+    <h2>Sort</h2>
+    <i class="material-icons">
+    sort
+    </i>
+    </button> 
+  
+  <div *ngIf="expanded" class="sort-expansion">
+    <button mat-button [class.active]="isActive==1" (click)="popularityLowToHigh()">Popularity low to high</button>
+    <button mat-button [class.active]="isActive==2" (click)="popularityHighToLow()">Populity high to low</button>
+    <button mat-button [class.active]="isActive==3" (click)="dateLowToHigh()">Most recent first</button>
+    <button mat-button [class.active]="isActive==4" (click)="dateHighToLow()">Oldies first</button>
+    <mat-radio-group aria-label="Genre" >
+      <mat-radio-button value="1">All</mat-radio-button>
+      <mat-radio-button value="2">Drama</mat-radio-button>
+      <mat-radio-button value="3">Comedy</mat-radio-button>
+      <mat-radio-button value="4">Action</mat-radio-button>
+      <mat-radio-button value="5">Adventure</mat-radio-button>
+    </mat-radio-group>
+    <button (click)="hitApi()">Sort</button>
+
+  </div>
 </form>

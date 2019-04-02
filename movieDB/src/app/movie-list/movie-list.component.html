@@ -1,0 +1,20 @@
+<!-- <h1 *ngFor="let move of movieList">
+  {{move.title}}
+</h1> -->
+
+<mat-grid-list cols="3" rowHeight="1:1">
+    <mat-grid-tile *ngFor = "let movie of movieList">
+      <mat-card class="movie-card"> 
+          <div class="front">
+            <img mat-card-image class="image-movie"src="http://image.tmdb.org/t/p/w200{{movie.poster_path}}" alt="Default image" />
+          </div>
+          <div class="back">
+            <mat-card-title>{{movie.title}}</mat-card-title>	
+            <mat-card-content> {{movie.overview}} </mat-card-content>
+            <mat-card-footer>
+              Released on: {{movie.release_date}}
+            </mat-card-footer>
+          </div>
+        </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>

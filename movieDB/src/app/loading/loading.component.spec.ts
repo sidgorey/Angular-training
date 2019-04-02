@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SortBarComponent } from './sort-bar.component';
+import { LoadingComponent } from './loading.component';
 
-describe('SortBarComponent', () => {
-  let component: SortBarComponent;
-  let fixture: ComponentFixture<SortBarComponent>;
+describe('LoadingComponent', () => {
+  let component: LoadingComponent;
+  let fixture: ComponentFixture<LoadingComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SortBarComponent ]
+      declarations: [ LoadingComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SortBarComponent);
+    fixture = TestBed.createComponent(LoadingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -22,6 +22,4 @@ describe('SortBarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
- 
 });

@@ -1,0 +1,51 @@
+.movie-card{
+    margin: 1rem;
+    padding: .5rem;
+    height: 20rem !important;
+    width: 16rem !important;
+
+}
+
+div{
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;    
+    backface-visibility: hidden;    
+}
+.movie-card:hover > .front{
+    z-index: 0;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);   
+}
+.movie-card:hover > .back{
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);    
+    transform: rotateY(0deg);
+}
+.front{
+    z-index: 3;
+    text-align: center;
+}
+.back{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);   
+    
+}
+.image-movie{
+    height: 20rem;
+    width: 16rem;
+    
+}
+div.float-left{
+    flex: 100%;
+}
+
+
+

@@ -1,0 +1,19 @@
+div.sortForm > input,button{
+    display: block;
+    width: 12rem;
+    margin: .5rem;
+    font-size: .9rem;
+}
+.active{
+    background-color:lightblue;
+}
+.mat-radio-button{
+    display: block;
+
+}
+.sort-expansion{
+    width: 12rem;
+}
+h2{
+    display: inline-block;
+}

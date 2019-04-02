@@ -1,0 +1,17 @@
+.example-form {
+    width: 50rem;
+    align-content: center;
+  }
+  
+  
+  input#searchInput{
+      width: 30rem; 
+      height: 2rem;
+      margin: 1rem;
+      margin-left: 20rem;
+      display: inline-block;
+
+  }
+  input#searchInput:focus{
+    outline: none;
+  }

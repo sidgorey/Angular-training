@@ -1,3 +1,12 @@
-<p>
-  main works!
-</p>
+
+  <div>
+    <div id="functionbar">  
+      
+        <app-search-bar (loading) = "changeLoader($event)" (getFilteredMoviesSearch) = "displayMovies($event)" id="searchbar"></app-search-bar>
+
+      <app-sort-bar (loading) = "changeLoader($event)" (getFilteredMoviesSort) = "displayMovies($event)" id="sortbar"></app-sort-bar>
+      
+    </div>
+    <app-movie-list [movies]="movies"></app-movie-list>
+  </div>
+
